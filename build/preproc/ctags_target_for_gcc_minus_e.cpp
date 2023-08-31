@@ -1,4 +1,4 @@
-# 1 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 1 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
 /*********************************************************************
  *  ROSArduinoBridge
  
@@ -77,16 +77,16 @@
 
 
 
-# 80 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 2
+# 80 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 2
 
 
 
 
 /* Include definition of serial commands */
-# 86 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 2
+# 86 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 2
 
 /* Sensor functions */
-# 89 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 2
+# 89 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 2
 
 /* Include servo support if required */
 
@@ -96,13 +96,13 @@
 
 
   /* Motor driver function definitions */
-# 99 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 2
+# 99 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 2
 
   /* Encoder driver function definitions */
-# 102 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 2
+# 102 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 2
 
   /* PID parameters and functions */
-# 105 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 2
+# 105 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 2
 
   /* Run the PID loop at 30 times per second */
 
@@ -142,9 +142,9 @@ long arg2;
 /* Clear the current command parameters */
 void resetCommand() {
   cmd = 
-# 143 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3 4
+# 143 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3 4
        __null
-# 143 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 143 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
            ;
   memset(argv1, 0, sizeof(argv1));
   memset(argv2, 0, sizeof(argv2));
@@ -190,7 +190,7 @@ int runCommand() {
   case 'p':
     Serial.println(Ping(arg1));
     break;
-# 199 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 199 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
   case 'e':
     Serial.print(readEncoder(0));
     Serial.print(" ");
@@ -249,122 +249,122 @@ void setup() {
 
     //set as inputs
     
-# 256 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 256 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
    (*(volatile uint8_t *)((0x0A) + 0x20)) 
-# 256 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 256 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
         &= ~(1<<
-# 256 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 256 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
                 2 
-# 256 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 256 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                 /*pin 2*/);
     
-# 257 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 257 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
    (*(volatile uint8_t *)((0x0A) + 0x20)) 
-# 257 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 257 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
         &= ~(1<<
-# 257 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 257 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
                 3 
-# 257 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 257 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                 /*pin 3*/);
     
-# 258 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 258 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
    (*(volatile uint8_t *)((0x07) + 0x20)) 
-# 258 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 258 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
         &= ~(1<<
-# 258 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 258 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
                 4 
-# 258 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 258 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                 /*pin A4*/);
     
-# 259 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 259 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
    (*(volatile uint8_t *)((0x07) + 0x20)) 
-# 259 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 259 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
         &= ~(1<<
-# 259 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 259 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
                 5 
-# 259 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 259 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                 /*pin A5*/);
 
     //enable pull up resistors
     
-# 262 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 262 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
    (*(volatile uint8_t *)((0x0B) + 0x20)) 
-# 262 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 262 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
          |= (1<<
-# 262 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 262 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
                 2 
-# 262 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 262 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                 /*pin 2*/);
     
-# 263 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 263 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
    (*(volatile uint8_t *)((0x0B) + 0x20)) 
-# 263 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 263 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
          |= (1<<
-# 263 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 263 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
                 3 
-# 263 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 263 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                 /*pin 3*/);
     
-# 264 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 264 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
    (*(volatile uint8_t *)((0x08) + 0x20)) 
-# 264 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 264 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
          |= (1<<
-# 264 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 264 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
                 4 
-# 264 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 264 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                 /*pin A4*/);
     
-# 265 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 265 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
    (*(volatile uint8_t *)((0x08) + 0x20)) 
-# 265 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 265 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
          |= (1<<
-# 265 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 265 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
                 5 
-# 265 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 265 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                 /*pin A5*/);
 
     // tell pin change mask to listen to left encoder pins
     
-# 268 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 268 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
    (*(volatile uint8_t *)(0x6D)) 
-# 268 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 268 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
           |= (1 << 
-# 268 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 268 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
                    2 
-# 268 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 268 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                    /*pin 2*/)|(1 << 
-# 268 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 268 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
                                          3 
-# 268 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 268 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                                          /*pin 3*/);
     // tell pin change mask to listen to right encoder pins
     
-# 270 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 270 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
    (*(volatile uint8_t *)(0x6C)) 
-# 270 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 270 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
           |= (1 << 
-# 270 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 270 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
                    4 
-# 270 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 270 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                    /*pin A4*/)|(1 << 
-# 270 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 270 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
                                           5 
-# 270 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 270 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                                           /*pin A5*/);
 
     // enable PCINT1 and PCINT2 interrupt in the general interrupt mask
     
-# 273 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 273 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
    (*(volatile uint8_t *)(0x68)) 
-# 273 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 273 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
          |= (1 << 
-# 273 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 273 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
                   1
-# 273 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 273 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                        ) | (1 << 
-# 273 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3
+# 273 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3
                                  2
-# 273 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 273 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                                       );
 
   initMotorController();
@@ -372,7 +372,7 @@ void setup() {
 
 
 /* Attach servos if used */
-# 289 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 289 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
 }
 
 /* Enter the main loop.  Read and parse input from the serial port
@@ -388,14 +388,14 @@ void loop() {
     // Terminate a command with a CR
     if (chr == 13) {
       if (arg == 1) argv1[index] = 
-# 303 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3 4
+# 303 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3 4
                                   __null
-# 303 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 303 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                                       ;
       else if (arg == 2) argv2[index] = 
-# 304 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3 4
+# 304 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3 4
                                        __null
-# 304 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 304 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                                            ;
       runCommand();
       resetCommand();
@@ -406,9 +406,9 @@ void loop() {
       if (arg == 0) arg = 1;
       else if (arg == 1) {
         argv1[index] = 
-# 313 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino" 3 4
+# 313 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino" 3 4
                       __null
-# 313 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+# 313 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
                           ;
         arg = 2;
         index = 0;
@@ -454,7 +454,7 @@ void loop() {
 
 
 }
-# 1 "/home/claudio/dev_arduino/kilobot_arduino/encoder_driver.ino"
+# 1 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino"
 /* *************************************************************
    Encoder definitions
    
@@ -463,24 +463,24 @@ void loop() {
    #define near the top of the main ROSArduinoBridge.ino file.
    
    ************************************************************ */
-# 31 "/home/claudio/dev_arduino/kilobot_arduino/encoder_driver.ino"
+# 31 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino"
   volatile long left_enc_pos = 0L;
   volatile long right_enc_pos = 0L;
   static const int8_t ENC_STATES [] = {0,1,-1,0,-1,0,0,1,1,0,0,-1,0,-1,1,0}; //encoder lookup table
 
   /* Interrupt routine for LEFT encoder, taking care of actual counting */
   
-# 36 "/home/claudio/dev_arduino/kilobot_arduino/encoder_driver.ino" 3
+# 36 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino" 3
  extern "C" void __vector_5 /* Pin Change Interrupt Request 1 */ (void) __attribute__ ((signal,used, externally_visible)) ; void __vector_5 /* Pin Change Interrupt Request 1 */ (void)
-# 36 "/home/claudio/dev_arduino/kilobot_arduino/encoder_driver.ino"
+# 36 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino"
                   {
    static uint8_t enc_last=0;
 
  enc_last <<=2; //shift previous state two places
  enc_last |= (
-# 40 "/home/claudio/dev_arduino/kilobot_arduino/encoder_driver.ino" 3
+# 40 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino" 3
              (*(volatile uint8_t *)((0x09) + 0x20)) 
-# 40 "/home/claudio/dev_arduino/kilobot_arduino/encoder_driver.ino"
+# 40 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino"
                   & (3 << 2)) >> 2; //read the current state into lowest 2 bits
 
    left_enc_pos += ENC_STATES[(enc_last & 0x0f)];
@@ -488,17 +488,17 @@ void loop() {
 
   /* Interrupt routine for RIGHT encoder, taking care of actual counting */
   
-# 46 "/home/claudio/dev_arduino/kilobot_arduino/encoder_driver.ino" 3
+# 46 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino" 3
  extern "C" void __vector_4 /* Pin Change Interrupt Request 0 */ (void) __attribute__ ((signal,used, externally_visible)) ; void __vector_4 /* Pin Change Interrupt Request 0 */ (void)
-# 46 "/home/claudio/dev_arduino/kilobot_arduino/encoder_driver.ino"
+# 46 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino"
                   {
         static uint8_t enc_last=0;
 
  enc_last <<=2; //shift previous state two places
  enc_last |= (
-# 50 "/home/claudio/dev_arduino/kilobot_arduino/encoder_driver.ino" 3
+# 50 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino" 3
              (*(volatile uint8_t *)((0x06) + 0x20)) 
-# 50 "/home/claudio/dev_arduino/kilobot_arduino/encoder_driver.ino"
+# 50 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino"
                   & (3 << 4)) >> 4; //read the current state into lowest 2 bits
 
    right_enc_pos += ENC_STATES[(enc_last & 0x0f)];
@@ -529,7 +529,7 @@ void resetEncoders() {
   resetEncoder(0);
   resetEncoder(1);
 }
-# 1 "/home/claudio/dev_arduino/kilobot_arduino/motor_driver.ino"
+# 1 "/home/claudio/robot_arduino/kilobot_arduino/motor_driver.ino"
 /***************************************************************
    Motor driver definitions
    
@@ -538,7 +538,7 @@ void resetEncoders() {
    #define near the top of the main ROSArduinoBridge.ino file.
    
    *************************************************************/
-# 59 "/home/claudio/dev_arduino/kilobot_arduino/motor_driver.ino"
+# 59 "/home/claudio/robot_arduino/kilobot_arduino/motor_driver.ino"
   void initMotorController() {
     digitalWrite(12, 0x1);
     digitalWrite(13, 0x1);
@@ -569,7 +569,7 @@ void resetEncoders() {
     setMotorSpeed(0, leftSpeed);
     setMotorSpeed(1, rightSpeed);
   }
-# 1 "/home/claudio/dev_arduino/kilobot_arduino/servos.ino"
+# 1 "/home/claudio/robot_arduino/kilobot_arduino/servos.ino"
 /***************************************************************
    Servo Sweep - by Nathaniel Gallinger
 

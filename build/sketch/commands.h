@@ -1,4 +1,4 @@
-#line 1 "/home/claudio/dev_arduino/kilobot_arduino/commands.h"
+#line 1 "/home/claudio/robot_arduino/kilobot_arduino/commands.h"
 /* Define single-letter commands that will be sent by the PC over the
    serial link.
 */

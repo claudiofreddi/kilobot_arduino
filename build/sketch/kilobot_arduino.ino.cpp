@@ -1,4 +1,4 @@
-#line 1 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+#line 1 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
 /*********************************************************************
  *  ROSArduinoBridge
  
@@ -140,27 +140,27 @@ long arg1;
 long arg2;
 
 /* Clear the current command parameters */
-#line 142 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+#line 142 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
 void resetCommand();
-#line 153 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+#line 153 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
 int runCommand();
-#line 249 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+#line 249 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
 void setup();
-#line 295 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+#line 295 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
 void loop();
-#line 56 "/home/claudio/dev_arduino/kilobot_arduino/encoder_driver.ino"
+#line 56 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino"
 long readEncoder(int i);
-#line 62 "/home/claudio/dev_arduino/kilobot_arduino/encoder_driver.ino"
+#line 62 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino"
 void resetEncoder(int i);
-#line 76 "/home/claudio/dev_arduino/kilobot_arduino/encoder_driver.ino"
+#line 76 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino"
 void resetEncoders();
-#line 59 "/home/claudio/dev_arduino/kilobot_arduino/motor_driver.ino"
+#line 59 "/home/claudio/robot_arduino/kilobot_arduino/motor_driver.ino"
 void initMotorController();
-#line 64 "/home/claudio/dev_arduino/kilobot_arduino/motor_driver.ino"
+#line 64 "/home/claudio/robot_arduino/kilobot_arduino/motor_driver.ino"
 void setMotorSpeed(int i, int spd);
-#line 85 "/home/claudio/dev_arduino/kilobot_arduino/motor_driver.ino"
+#line 85 "/home/claudio/robot_arduino/kilobot_arduino/motor_driver.ino"
 void setMotorSpeeds(int leftSpeed, int rightSpeed);
-#line 142 "/home/claudio/dev_arduino/kilobot_arduino/kilobot_arduino.ino"
+#line 142 "/home/claudio/robot_arduino/kilobot_arduino/kilobot_arduino.ino"
 void resetCommand() {
   cmd = NULL;
   memset(argv1, 0, sizeof(argv1));
@@ -379,7 +379,7 @@ void loop() {
 }
 
 
-#line 1 "/home/claudio/dev_arduino/kilobot_arduino/encoder_driver.ino"
+#line 1 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino"
 /* *************************************************************
    Encoder definitions
    
@@ -463,7 +463,7 @@ void resetEncoders() {
 #endif
 
 
-#line 1 "/home/claudio/dev_arduino/kilobot_arduino/motor_driver.ino"
+#line 1 "/home/claudio/robot_arduino/kilobot_arduino/motor_driver.ino"
 /***************************************************************
    Motor driver definitions
    
@@ -558,7 +558,7 @@ void resetEncoders() {
 
 #endif
 
-#line 1 "/home/claudio/dev_arduino/kilobot_arduino/servos.ino"
+#line 1 "/home/claudio/robot_arduino/kilobot_arduino/servos.ino"
 /***************************************************************
    Servo Sweep - by Nathaniel Gallinger
 
