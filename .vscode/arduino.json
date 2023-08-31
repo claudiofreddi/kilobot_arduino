@@ -1,0 +1,7 @@
+{
+    "board": "arduino:avr:uno",
+    "port": "/dev/ttyACM0",
+    "programmer": "avrispmkii",
+    "sketch": "ROSArduinoBridge.ino",
+    "output": "build"
+}
