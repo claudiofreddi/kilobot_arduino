@@ -4,13 +4,13 @@
     "configurations": [
         {
             "name": "Linux",
-            "compilerPath": "/usr/bin/gcc",
+            "compilerPath": "",
             "compilerArgs": [],
             "intelliSenseMode": "linux-gcc-arm64",
             "includePath": [
                 "${workspaceFolder}/**",
-
-                "/home/claudio/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/**"
+                "/home/claudio/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/**",
+                "/home/claudio/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/**"
             ],
             "forcedInclude": [],
             "cStandard": "c17",
@@ -35,7 +35,7 @@
             "intelliSenseMode": "gcc-x64",
             "includePath": [
                 "/home/claudio/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino",
-                "/home/claudio/.arduino15/packages/arduino/hardware/avr/1.8.6/variants/standard",
+                "/home/claudio/.arduino15/packages/arduino/hardware/avr/1.8.6/variants/mega",
                 "/home/claudio/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/7.3.0/include",
                 "/home/claudio/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/lib/gcc/avr/7.3.0/include-fixed",
                 "/home/claudio/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include"
@@ -48,7 +48,7 @@
             "defines": [
                 "F_CPU=16000000L",
                 "ARDUINO=10607",
-                "ARDUINO_AVR_UNO",
+                "ARDUINO_AVR_MEGA2560",
                 "ARDUINO_ARCH_AVR",
                 "__DBL_MIN_EXP__=(-125)",
                 "__HQ_FBIT__=15",

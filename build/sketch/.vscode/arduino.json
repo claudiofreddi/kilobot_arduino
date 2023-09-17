@@ -1,8 +1,9 @@
 #line 1 "/home/claudio/robot_arduino/kilobot_arduino/.vscode/arduino.json"
 {
-    "board": "arduino:avr:uno",
-    "port": "/dev/ttyACM0",
+    "board": "arduino:avr:mega",
+    "port": "/dev/ttyUSB0",
     "programmer": "avrispmkii",
     "sketch": "kilobot_arduino.ino",
-    "output": "build"
+    "output": "build",
+    "configuration": "cpu=atmega2560"
 }

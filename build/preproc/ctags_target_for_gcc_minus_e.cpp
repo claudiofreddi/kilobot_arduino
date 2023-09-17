@@ -471,7 +471,7 @@ void loop() {
   /* Interrupt routine for LEFT encoder, taking care of actual counting */
   
 # 36 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino" 3
- extern "C" void __vector_5 /* Pin Change Interrupt Request 1 */ (void) __attribute__ ((signal,used, externally_visible)) ; void __vector_5 /* Pin Change Interrupt Request 1 */ (void)
+ extern "C" void __vector_11 (void) __attribute__ ((signal,used, externally_visible)) ; void __vector_11 (void)
 # 36 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino"
                   {
    static uint8_t enc_last=0;
@@ -489,7 +489,7 @@ void loop() {
   /* Interrupt routine for RIGHT encoder, taking care of actual counting */
   
 # 46 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino" 3
- extern "C" void __vector_4 /* Pin Change Interrupt Request 0 */ (void) __attribute__ ((signal,used, externally_visible)) ; void __vector_4 /* Pin Change Interrupt Request 0 */ (void)
+ extern "C" void __vector_10 (void) __attribute__ ((signal,used, externally_visible)) ; void __vector_10 (void)
 # 46 "/home/claudio/robot_arduino/kilobot_arduino/encoder_driver.ino"
                   {
         static uint8_t enc_last=0;

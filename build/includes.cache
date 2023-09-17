@@ -7,7 +7,7 @@
   {
     "Sourcefile": null,
     "Include": "",
-    "Includepath": "/home/claudio/.arduino15/packages/arduino/hardware/avr/1.8.6/variants/standard"
+    "Includepath": "/home/claudio/.arduino15/packages/arduino/hardware/avr/1.8.6/variants/mega"
   },
   {
     "Sourcefile": "/home/claudio/robot_arduino/kilobot_arduino/build/sketch/kilobot_arduino.ino.cpp",
